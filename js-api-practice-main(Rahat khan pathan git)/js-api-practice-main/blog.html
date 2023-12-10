@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://kit.fontawesome.com/be993b73a1.js"
+            crossorigin="anonymous"
+        ></script>
+        <style></style>
+    </head>
+    <body class="font-global">
+        <main class="container m-auto px-14 pt-14 space-y-2">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                    Scope of var, let, and const
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        Here's a short description of the scopes of <b>var</b>,
+                        <b>let</b>, and <b>const</b> in JavaScript:
+                    </p>
+                    <br />
+                    <ol
+                        type="A"
+                        style="list-style: decimal"
+                        class="px-5 text-justify"
+                    >
+                        <li>
+                            <b>var</b>: - var variables are function-scoped,
+                            meaning they are accessible within the function they
+                            are defined in. - If declared outside of any
+                            function, they become global variables, accessible
+                            throughout the entire script.
+                        </li>
+                        <li>
+                            <b>let</b>: - let variables are block-scoped, making
+                            them accessible within the block (e.g., within loops
+                            or conditionals) in which they are defined. - They
+                            are not accessible outside of the block in which
+                            they are declared.
+                        </li>
+                        <li>
+                            <b>const</b>: - Similar to let, const variables are
+                            block-scoped. - Additionally, const variables are
+                            immutable, meaning their values cannot be changed
+                            once assigned, though it's essential to note that
+                            for objects and arrays, the variable itself cannot
+                            be reassigned, but the properties or elements within
+                            them can be modified.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Use cases of null and undefined
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        <b>null</b> and <b>undefined</b> are two distinct values
+                        in JavaScript, and they have different use cases:
+                    </p>
+                    <br />
+                    <ol
+                        type="A"
+                        style="list-style: decimal"
+                        class="px-5 text-justify"
+                    >
+                        <li>
+                            <b>null</b>:
+                            <ul style="list-style: disc" class="px-4">
+                                <li>
+                                    <b>Use Case</b>: Typically, null is
+                                    explicitly assigned to a variable or
+                                    property when you want to indicate that it
+                                    has no value or is intentionally empty.
+                                </li>
+                                <li>
+                                    <b>Example Use Cases</b>:
+                                    <ul style="list-style: disc" class="px-4">
+                                        <li>
+                                            Initializing a variable or object
+                                            property to indicate an absence of a
+                                            meaningful value.
+                                        </li>
+                                        <li>
+                                            Clearing the value of a variable or
+                                            property.
+                                        </li>
+                                        <li>
+                                            Explicitly handling cases where no
+                                            object or value is available.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>undefined</b>:
+                            <ul style="list-style: disc" class="px-4">
+                                <li>
+                                    <b>Use Case</b>: undefined usually
+                                    represents a variable or property that has
+                                    been declared but hasn't been assigned a
+                                    value. It often indicates unintentional
+                                    absence or missing values.
+                                </li>
+                                <li>
+                                    <b>Example Use Cases</b>:
+                                    <ul style="list-style: disc" class="px-4">
+                                        <li>
+                                            When a function doesn't return a
+                                            value, JavaScript assigns undefined
+                                            by default.
+                                        </li>
+                                        <li>
+                                            Accessing a variable or object
+                                            property that hasn't been defined or
+                                            initialized.
+                                        </li>
+                                        <li>
+                                            Function parameters that have not
+                                            been provided with arguments.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">REST API</div>
+                <div class="collapse-content">
+                    <p>
+                        A Representational State Transfer (<b>REST</b>) API is a
+                        set of architectural constraints and principles for
+                        designing networked applications. It is an approach to
+                        building web services that are simple, scalable, and
+                        stateless, making it easier for different systems to
+                        communicate with each other over the internet. Key
+                        characteristics of REST APIs include:
+                    </p>
+                    <br />
+                    <ul style="list-style: disc" class="px-5 text-justify">
+                        <li>
+                            <b>Resources</b>: REST APIs model resources as
+                            objects or data, which are identified by unique URLs
+                            (Uniform Resource Locators). Resources can represent
+                            entities like users, products, or any other data you
+                            want to expose.
+                        </li>
+                        <li>
+                            <b>Stateless</b>: Each request from a client to a
+                            REST API must contain all the information needed to
+                            understand and process the request. The server does
+                            not store any client-specific information between
+                            requests, making it easier to scale and maintain.
+                        </li>
+                        <li>
+                            <b>HTTP Methods</b>: REST APIs use standard HTTP
+                            methods, such as GET (retrieve data), POST (create
+                            data), PUT (update data), and DELETE (remove data),
+                            to perform CRUD (Create, Read, Update, Delete)
+                            operations on resources.
+                        </li>
+                        <li>
+                            <b>Representation</b>: Data is transferred between
+                            the client and server in a common format, such as
+                            JSON or XML. This allows different clients,
+                            including web browsers and mobile apps, to
+                            communicate with the API.
+                        </li>
+                        <li>
+                            <b>Statelessness</b>: REST APIs are stateless,
+                            meaning each request from a client to the server
+                            must contain all the information necessary for the
+                            server to understand and process the request. The
+                            server doesn't store any client-specific data
+                            between requests, which makes it highly scalable and
+                            maintainable.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
